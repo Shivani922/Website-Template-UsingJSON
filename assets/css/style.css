@@ -419,53 +419,62 @@ h2 {
       display: inline-block;
       max-width: 100%; }
 
-.wrapper {
-  width: 100%;
+.owl-carosol {
   background-color: #ff0000;
   color: white;
-  padding: 40px 0; }
-  .wrapper h2 {
+  padding: 40px 127px; }
+  @media (max-width: 770px) {
+    .owl-carosol {
+      padding: 40px 0; } }
+  @media (max-width: 1025px) {
+    .owl-carosol {
+      padding: 40px 30px; } }
+  .owl-carosol h2 {
     text-transform: uppercase;
     text-align: center;
     font-size: 45px; }
     @media (max-width: 767px) {
-      .wrapper h2 {
+      .owl-carosol h2 {
         margin-bottom: 30px;
         font-size: 40px; } }
 
-.carousel {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 30px; }
-  @media (max-width: 767px) {
-    .carousel {
-      padding: 0 10px;
-      max-width: 95%; } }
-
-.carousel .card {
+.wrapper {
+  background-color: #ff0000;
   color: white;
-  text-align: center;
-  margin: 20px 0;
-  line-height: 250px;
-  font-size: 90px;
-  font-weight: 600;
-  border-radius: 10px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); }
+  padding: 40px 78px; }
 
-.owl-dots {
+.user-image {
+  width: 200px !important;
+  border-radius: 0%;
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px; }
+
+.owl-item {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.owl-theme .owl-dots, .owl-theme .owl-nav {
   text-align: center;
   margin-top: 40px; }
 
-.owl-dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 5px;
-  outline: none;
-  border-radius: 14px;
+.owl-theme .owl-dots .owl-dot {
+  height: 15px !important;
+  width: 15px !important;
+  margin: 0 5px !important;
+  outline: none !important;
+  border-radius: 14px !important;
   border: 2px solid white !important;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease; }
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2) !important;
+  transition: all 0.3s ease !important; }
 
-.owl-dot.active,
-.owl-dot:hover {
+.owl-theme .owl-dots .owl-dot.active,
+.owl-theme .owl-dots .owl-dot:hover {
   background: white !important; }
+
+.owl-theme .owl-dots .owl-dot span {
+  background: transparent !important; }

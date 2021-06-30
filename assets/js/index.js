@@ -28,29 +28,47 @@ $(window).scroll(function() {
     }
 });
 
-//--------------for owl carousel----------------
+//----------------owl-carowsel-----------
 
-$(".carousel").owlCarousel({
-    margin: 20,
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 2000,
-    autoplayHoverPause: true,
-    responsive: {
-        0:{
-            items:1,
-            nav: false
-        },
-        600:{
-            items:2,
-            nav: false
-        },
-        1000:{
-            items:3,
-            nav: false
+$(document).ready(function(){
+    var html = '';
+    var owl = $('.owl-carousel').owlCarousel({
+        loop:true,
+        smartSpeed: 100,
+        autoplay: true,
+        autoplaySpeed: 100,
+        mouseDrag: false,
+        margin:10,
+        animateIn: 'slideInUp',
+        animateOut: 'fadeOut',
+        nav:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
         }
-    }
+    });
+    $.ajax({
+        url: 'template.json',
+        dataType: 'json',
+        success: function(data) {
+
+            for (let i = 0; i < data.results.length; i++) {
+                let image = data.results[i].picture.large;
+                owl.trigger ('add.owl.carousel', [jQuery('<div class="wrapper"><img src="'+image+'" class="user-image" alt=""> </div>')]);
+            }
+            owl.trigger('refresh.owl.carousel');
+        }
+    });
+
 });
+
 
 
 //--------------Show Mobile Menu----------------

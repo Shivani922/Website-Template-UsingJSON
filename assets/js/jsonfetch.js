@@ -7,7 +7,6 @@ let renderJson = function (data) {
     Requirement(data.RequirementSection);
     FooterAbove(data.AboveFooter);
     BelowFooter(data.BelowFooter);
-    owlCrousel(data.owlCrousel);
 
 };
 
@@ -184,32 +183,7 @@ let BelowFooter = (data) =>{
         $(htmlRender).appendTo("#FooterBelow");
     })
 }
-let owlCrousel = (data) =>{
-    $.each(data, function (key,value){
-        let htmlRender = "<div class='wrapper'>"+
-            "<h2>"+ value.owlHeading +"</h2>"+
-           " <div class='carousel owl-carousel'>"+
-                "<div class='card card-1'>"+
-                   " <a><img src='"+value.owlimg1+"'></a>"+
-               " </div>"+
-                 "<div class='card card-2'>"+
-                 " <a>"+"<img src='"+value.owlimg2+"'>"+"</a>"+
-                  " </div>"+
-                   "<div class='card card-3'>"+
-                 " <a>"+"<img src='"+value.owlimg3+"'>"+"</a>"+
-                 " </div>"+
-                  "<div class='card card-4'>"+
-                   " <a>"+"<img src='"+value.owlimg4+"'>"+"</a>"+
-                 " </div>"+
-                  "<div class='card card-5'>"+
-                  " <a>"+"<img src='"+value.owlimg5+"'>"+"</a>"+
-                 " </div>"+
-                 "  </div>"+
-                 "  </div>"
 
-        $(htmlRender).appendTo("#owlCrousel");
-    })
-}
 
 let fetchtemplate = () => {
     $.ajax({
