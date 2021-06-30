@@ -2,14 +2,15 @@
   "header": [
   {
     "companyLogo" : "assets/images/pepcus-logo.png",
-    "logoShow" : true,
+    "logoShow" : false,
     "link1": "Home",
     "link2": "About Us",
     "link3": "Careers",
     "link4": "Team",
     "link5": "Contact Us",
     "bannerTitle": "WE",
-    "bannerDescription": "Ready to build your product"
+    "bannerDescription": "Ready to build your product",
+    "button1": "Know More"
   }
   ],
 

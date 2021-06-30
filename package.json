@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node-sass --watch assets/scss/main.scss assets/css/style.css",
     "compile-sass": "node-sass  assets/scss/main.scss assets/css/style.css",
-
     "test": ""
   },
   "keywords": [],
@@ -14,5 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }

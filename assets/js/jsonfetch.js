@@ -8,12 +8,13 @@ let renderJson = function (data) {
     FooterAbove(data.AboveFooter);
     BelowFooter(data.BelowFooter);
 
+
 };
 
 
 let headerTop = (data) =>{
     $.each(data, function(key, value) {
-        let htmlRender =   "<div class='header-background'>" +
+        let htmlRender =   "<div class='header-background' >" +
             "<div class='header-container'>" +
             "<div class='header-con'>"+
             "<div class='header-logo'>"+
@@ -50,7 +51,8 @@ let headerTop = (data) =>{
             "</div>"+
             "<div class='banner-container'>"+
             "<h2>"+ value.bannerTitle +"</h2>"+
-            "<p>"+ value.bannerDescription +"</p>"+
+            "<p >"+ value.bannerDescription +"</p>"+
+            " <button type='button'>"+value.button1+"</button>"+
             "</div>"+
             "</div>";
         $(htmlRender).appendTo("#header1");
