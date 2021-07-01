@@ -185,6 +185,7 @@ h2{
 
 .logo-title-section{
   background: $background-color-light;
+  height: fit-content;
   .logo-title-heading{
     padding: 56px 30px;
     text-align: center;
@@ -225,6 +226,7 @@ h2{
 
 .left-right-main-container{
   margin-bottom: 100px;
+  height: fit-content;
   h4{
     text-align: center;
     font-size: 40px;
@@ -296,6 +298,7 @@ h2{
   display: flex;
   justify-content: center;
   padding: 80px 180px;
+  height: fit-content;
   background: $background-color-light;
 
   @media (max-width: 767px) {

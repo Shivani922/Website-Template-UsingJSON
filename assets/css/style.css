@@ -155,7 +155,8 @@ h2 {
     font-weight: 300; }
 
 .logo-title-section {
-  background: #f2f2f2; }
+  background: #f2f2f2;
+  height: fit-content; }
   .logo-title-section .logo-title-heading {
     padding: 56px 30px;
     text-align: center; }
@@ -187,7 +188,8 @@ h2 {
         height: 60px; }
 
 .left-right-main-container {
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  height: fit-content; }
   .left-right-main-container h4 {
     text-align: center;
     font-size: 40px;
@@ -245,6 +247,7 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 80px 180px;
+  height: fit-content;
   background: #f2f2f2; }
   @media (max-width: 767px) {
     .manage-work-section {

@@ -49,7 +49,7 @@ let headerTop = (data) =>{
             "</ul>"+
 
             "</div>"+
-            "<div class='banner-container'>"+
+            "<div class='banner-container' data-aos='fade-right' data-aos-duration='300'>"+
             "<h2>"+ value.bannerTitle +"</h2>"+
             "<p >"+ value.bannerDescription +"</p>"+
             " <button type='button'>"+value.button1+"</button>"+
@@ -63,23 +63,23 @@ let logosTitleSection = (data) =>{
     $.each(data, function(key,value){
         let htmlRender = "<div class='logo-title-section'>"+
             "<div class='logo-title-heading'>"+
-            "<h2>"+ value.mainHeading +"</h2>"+
+            "<h2 data-aos='fade-right' data-aos-duration='300' data-aos-easing='ease-in-out'>"+ value.mainHeading +"</h2>"+
             "<p >"+value.mainDesc+"</p>"+
             "</div>"+
             "<div class='logo-title-flex-section'>" +
-            "<div class='logo-title-container'>" +
+            "<div class='logo-title-container' data-aos='flip-left' data-aos-duration='300' data-aos-easing='ease-in-out'>" +
             "<img src='"+value.icon1+"'>"+
             "<h4 >"+value.heading1+"</h4>"+
             "<p >"+value.description1+"</p>"+
             "</div>"+
             " <div class=\"vl\"></div>"+
-            "<div class='logo-title-container'>" +
+            "<div class='logo-title-container' data-aos='flip-left' data-aos-duration='300' data-aos-easing='ease-in-out'>" +
             "<img src='"+value.icon2+"'>"+
             "<h4>"+value.heading2+"</h4>"+
             "<p>"+value.description2+"</p>"+
             "</div>"+
             " <div class=\"vl\"></div>"+
-            "<div class='logo-title-container'>" +
+            "<div class='logo-title-container' data-aos='flip-left' data-aos-duration='300'>" +
             "<img src='"+value.icon3+"'>"+
             "<h4>"+value.heading3+"</h4>"+
             "<p>"+value.description3+"</p>"+
@@ -99,10 +99,10 @@ let leftRightSection = (data) =>{
                "<img src='"+value.headingImg+"'>"+
                "</div>"+
                "<div class='left-right-container'>"+
-               "<div class='left-image-container'>"+
+               "<div class='left-image-container' data-aos='fade-right' data-aos-duration='300'>"+
                "<img src='"+value.Leftimg+"'>"+
                "</div>"+
-               "<div class='right-description'>" +
+               "<div class='right-description' data-aos='fade-left' data-aos-duration='300'>" +
                   "<p>"+value.RightDesc+"</p>"+
               " </div>"+
                " </div>"+
@@ -114,11 +114,11 @@ let leftRightSection = (data) =>{
 let ManageWork = (data) =>{
     $.each(data, function (key,value){
         let htmlRender = "<div class='manage-work-section'>"+
-            "<div class='manage-work-right-section'>"+
+            "<div class='manage-work-right-section' data-aos='fade-right' data-aos-duration='300'>"+
                 "<h2>"+ value.WorkHeading +"</h2>"+
             "</div>"+
             "<div class='manage-work-left-section'>"+
-               " <div class='manage-work-container'>"+
+               " <div class='manage-work-container' data-aos='fade-left' data-aos-duration='300'>"+
                    "<p>"+value.p1 +"</p>"+
                    "<p>"+value.p2 +"</p>"+
                    "<p>"+value.p3 +"</p>"+
@@ -135,7 +135,7 @@ let ManageWork = (data) =>{
 let Requirement = (data) => {
     $.each(data, function (key,value){
         let htmlRender = "<div class = 'requirement-section'>"+
-            "<h2>"+ value.requirementHeading+"</h2>"+
+            "<h2 data-aos='fade-right' data-aos-duration='300'>"+ value.requirementHeading+"</h2>"+
           "  <input type='text' placeholder = 'Your Email' />"+" <br/>"+"<br/>"+
             "<input type='text' placeholder='I would like to develop a website'/>"+"<br/>"+
            " <button type='button'>"+value.buttonText+"</button>"+
