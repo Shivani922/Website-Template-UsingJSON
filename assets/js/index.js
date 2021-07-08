@@ -83,7 +83,3 @@ function hidemenu(){
     $(".crossbtn").removeClass("show");
     $(".checkbtn").show();
 }
-
-
-
-

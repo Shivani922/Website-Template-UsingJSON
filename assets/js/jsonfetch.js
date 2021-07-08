@@ -1,16 +1,44 @@
 
 let renderJson = function (data) {
     headerTop(data.header);
-    logosTitleSection(data.logoTitleSection);
-    leftRightSection(data.leftRightSection);
-    ManageWork(data.ManageWork);
-    Requirement(data.RequirementSection);
     FooterAbove(data.AboveFooter);
     BelowFooter(data.BelowFooter);
+    let logoTitleData = data.logoTitleSection;
+    const logoTitleDataUpdated = [];
+    for (let i = 0; i < logoTitleData.length; i++) {
+        if (logoTitleData[i].titleSection === true) {
+            logoTitleDataUpdated.push(logoTitleData[i]);
+        }
+    }
+    logosTitleSectiondata(logoTitleDataUpdated);
 
+    let leftRightSectionData = data.leftRightSection;
+    const leftRightSectionDataUpdated = [];
+    for (let i = 0; i < leftRightSectionData.length; i++) {
+        if (leftRightSectionData[i].leftRightSectionData === true) {
+            leftRightSectionDataUpdated.push(leftRightSectionData[i]);
+        }
+    }
+    leftRightSection(leftRightSectionDataUpdated);
 
-};
+    let manageWorkData = data.ManageWork;
+    const manageWorkDataUpdated = [];
+    for (let i = 0; i < manageWorkData.length; i++) {
+        if (manageWorkData[i].manageWorkData === true) {
+            manageWorkDataUpdated.push(manageWorkData[i]);
+        }
+    }
+    ManageWork(manageWorkDataUpdated);
 
+    let RequirementData = data.RequirementSection;
+    const RequirementDataUpdated = [];
+    for (let i = 0; i < RequirementData.length; i++) {
+        if (RequirementData[i].formShow === true) {
+            RequirementDataUpdated.push(RequirementData[i]);
+        }
+    }
+    Requirement(RequirementDataUpdated);
+}
 
 let headerTop = (data) =>{
     $.each(data, function(key, value) {
@@ -59,7 +87,7 @@ let headerTop = (data) =>{
     });
 }
 
-let logosTitleSection = (data) =>{
+let logosTitleSectiondata = (data) =>{
     $.each(data, function(key,value){
         let htmlRender = "<div class='logo-title-section'>"+
             "<div class='logo-title-heading'>"+
@@ -83,6 +111,12 @@ let logosTitleSection = (data) =>{
             "<img src='"+value.icon3+"'>"+
             "<h4>"+value.heading3+"</h4>"+
             "<p>"+value.description3+"</p>"+
+            "</div>"+
+            " <div class=\"vl\"></div>"+
+            "<div class='logo-title-container' data-aos='flip-left' data-aos-duration='300'>" +
+            "<img src='"+value.icon4+"'>"+
+            "<h4>"+value.heading4+"</h4>"+
+            "<p>"+value.description4+"</p>"+
             "</div>"+
             "</div>"+
             "</div>";

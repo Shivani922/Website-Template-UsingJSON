@@ -3,9 +3,9 @@ html, body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
   font-family: 'Montserrat';
-  overflow-x: hidden;
   color: #505050;
-  width: 100%; }
+  width: 100%;
+  overflow-x: hidden; }
 
 ::selection {
   background: black;
@@ -176,7 +176,7 @@ h2 {
         flex-direction: column; } }
     .logo-title-section .logo-title-flex-section .logo-title-container {
       padding: 30px;
-      width: 25%; }
+      width: 20%; }
       @media (max-width: 767px) {
         .logo-title-section .logo-title-flex-section .logo-title-container {
           width: 85%; } }

@@ -26,7 +26,11 @@
       "description2": "Customized  product as per your requirement",
       "icon3":"assets/images/LowCost.png",
       "heading3": "Low Cost",
-      "description3": "Economy of scale at low-cost location"
+      "description3": "Economy of scale at low-cost location",
+      "icon4": "assets/images/KnowledgeRetention.png",
+      "heading4": "Knowledge Retention",
+      "description4": "knowledge retention at our cost.",
+      "titleSection": true
     }
   ],
 
@@ -36,7 +40,8 @@
       "DescriptionSection": "",
       "headingImg": "assets/images/HeadingBelow.png",
       "Leftimg": "assets/images/CEOImage.jpg",
-      "RightDesc": "To grow our business, we will increase productivity of existing businesses as well as expand into new areas. We will also work to ensure the increasingly diverse and sophisticated needs of our clients are met, by expanding the scope of our business from public-side services, such as public equity and public and corporate bonds, to private-side products and services, such as private equity and privately placed bonds.\n\nAs we actively pursue new areas of business, we remain committed to our enduring mission to enrich society through our expertise in the capital markets. We will strengthen our ESG initiatives while placing continued emphasis on earning society's trust and ensuring our people are happy and fulfilled."
+      "RightDesc": "To grow our business, we will increase productivity of existing businesses as well as expand into new areas. We will also work to ensure the increasingly diverse and sophisticated needs of our clients are met, by expanding the scope of our business from public-side services, such as public equity and public and corporate bonds, to private-side products and services, such as private equity and privately placed bonds.\n\nAs we actively pursue new areas of business, we remain committed to our enduring mission to enrich society through our expertise in the capital markets. We will strengthen our ESG initiatives while placing continued emphasis on earning society's trust and ensuring our people are happy and fulfilled.",
+      "leftRightSectionData": true
 
 
     }
@@ -49,14 +54,16 @@
       "p2": "We can guide you",
       "p3": "We deliver projects on time",
       "p4": "We work in minimal cost",
-      "p5": "Time is very important for us"
+      "p5": "Time is very important for us",
+      "manageWorkData": true
     }
   ],
 
   "RequirementSection": [
     {
       "requirementHeading": "Tell Us Your Requirement",
-      "buttonText":"Send"
+      "buttonText":"Send",
+      "formShow": true
     }
   ],
 
