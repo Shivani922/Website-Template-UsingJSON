@@ -144,13 +144,12 @@ h2{
   background: $font-white-color;
   position: relative;
   top: 0%;
-  text-align: center;
   height: 100vh;
   display: none;
   ul{
     list-style-type: none;
     margin: 0;
-    padding: 60px;
+    padding: 60px 60px 60px 0;
     overflow: hidden;
     font-size: 25px;
     li{
@@ -242,9 +241,11 @@ h2{
     left: 47%;
     text-align: center;
     width: 5%;
+    margin-bottom: 80px;
     @media (max-width: 767px) {
       left: 39%;
       width: 20%;
+      margin-bottom: 0px;
     }
   }
 
@@ -261,38 +262,55 @@ h2{
   @media (max-width: 1025px) {
     padding: 40px 17px 0;
   }
-  .left-image-container{
-    width: 30%;
-    margin-right: 80px;
-    height: 400px;
+}
+
+  .left-right-container-second{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px 120px 0;
     @media (max-width: 767px) {
-      width: 100%;
-    }
-    img{
-      border-radius: 10px;
-      width: 100%;
-      height: 100%;
-    }
-  }
-  .right-description{
-    margin-top: 50px;
-    width: 70%;
-    font-size: $font-size-18;
-    letter-spacing: 2px;
-    line-height: 25px;
-    @media (max-width: 767px) {
-      width: 100%;
-      margin-top: 50px!important;
+      flex-direction: column;
+      padding: 0px 15px;
     }
     @media (max-width: 1025px) {
-      margin-top: 0px;
+      padding: 40px 17px 0;
     }
-    p{
-      text-align: left;
-      margin: 0px;
+    .left-image-container{
+      margin-right: 50px!important;
     }
   }
 }
+
+.left-image-container{
+  width: 30%;
+  margin-right: 80px;
+  height: 400px;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+  img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+}
+.right-description{
+  margin-top: 50px;
+  width: 70%;
+  font-size: $font-size-18;
+  letter-spacing: 2px;
+  line-height: 25px;
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-top: 50px!important;
+  }
+  @media (max-width: 1025px) {
+    margin-top: 0px;
+  }
+  p{
+    text-align: left;
+    margin: 0px;
+  }
 }
 
 .manage-work-section{

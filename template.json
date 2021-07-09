@@ -1,13 +1,18 @@
 {
   "header": [
   {
+    "Menus": [
+      {
+        "link1": "Home",
+        "link2": "About Us",
+        "link3": "Careers",
+        "link4": "Team",
+        "link5": "Contact Us",
+        "isMenuShow": false
+      }
+    ],
+
     "companyLogo" : "assets/images/pepcus-logo.png",
-    "logoShow" : false,
-    "link1": "Home",
-    "link2": "About Us",
-    "link3": "Careers",
-    "link4": "Team",
-    "link5": "Contact Us",
     "bannerTitle": "WE",
     "bannerDescription": "Ready to build your product",
     "button1": "Know More"
@@ -36,11 +41,25 @@
 
   "leftRightSection": [
     {
-      "HeadingSection": "Our CEO",
+      "HeadingSection": "Reason to love working",
       "DescriptionSection": "",
       "headingImg": "assets/images/HeadingBelow.png",
-      "Leftimg": "assets/images/CEOImage.jpg",
-      "RightDesc": "To grow our business, we will increase productivity of existing businesses as well as expand into new areas. We will also work to ensure the increasingly diverse and sophisticated needs of our clients are met, by expanding the scope of our business from public-side services, such as public equity and public and corporate bonds, to private-side products and services, such as private equity and privately placed bonds.\n\nAs we actively pursue new areas of business, we remain committed to our enduring mission to enrich society through our expertise in the capital markets. We will strengthen our ESG initiatives while placing continued emphasis on earning society's trust and ensuring our people are happy and fulfilled.",
+       "leftRightContainerFirst": [
+         {
+         "workingImg": "assets/images/Office-Image.jpg",
+         "workingDesc": "To grow our business, we will increase productivity of existing businesses as well as expand into new areas. We will also work to ensure the increasingly diverse and sophisticated needs of our clients are met, by expanding the scope of our business from public-side services, such as public equity and public and corporate bonds, to private-side products and services, such as private equity and privately placed bonds.\n\nAs we actively pursue new areas of business, we remain committed to our enduring mission to enrich society through our expertise in the capital markets. We will strengthen our ESG initiatives while placing continued emphasis on earning society's trust and ensuring our people are happy and fulfilled.",
+           "isShow": true
+       }
+         ],
+      "leftRightContainerSecond": [
+         {
+           "workingImg": "assets/images/Office-lifestyle-image.jpg",
+           "workingDesc": "To grow our business, we will increase productivity of existing businesses as well as expand into new areas. We will also work to ensure the increasingly diverse and sophisticated needs of our clients are met, by expanding the scope of our business from public-side services, such as public equity and public and corporate bonds, to private-side products and services, such as private equity and privately placed bonds.\n\nAs we actively pursue new areas of business, we remain committed to our enduring mission to enrich society through our expertise in the capital markets. We will strengthen our ESG initiatives while placing continued emphasis on earning society's trust and ensuring our people are happy and fulfilled.",
+           "isShow": true
+         }
+        ],
+
+
       "leftRightSectionData": true
 
 
@@ -145,4 +164,7 @@
   ]
 
 
+
+
 }
+

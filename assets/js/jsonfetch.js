@@ -3,6 +3,28 @@ let renderJson = function (data) {
     headerTop(data.header);
     FooterAbove(data.AboveFooter);
     BelowFooter(data.BelowFooter);
+
+    //  Desktop Menu
+    let headerData = data.header[0].Menus;
+    const headerDataUpdated = [];
+    for (let i = 0; i < headerData.length; i++) {
+        if (headerData[i].isMenuShow === true) {
+            headerDataUpdated.push(headerData[i]);
+        }
+    }
+    headerMenusData(headerDataUpdated);
+
+    //  Mobile Menu
+    let headerMobileData = data.header[0].Menus;
+    const headerMobileDataUpdated = [];
+    for (let i = 0; i < headerMobileData.length; i++) {
+        if (headerMobileData[i].isMenuShow === true) {
+            headerMobileDataUpdated.push(headerMobileData[i]);
+        }
+    }
+    headerMobileMenuData(headerMobileDataUpdated);
+
+    //Logo Title Section
     let logoTitleData = data.logoTitleSection;
     const logoTitleDataUpdated = [];
     for (let i = 0; i < logoTitleData.length; i++) {
@@ -12,6 +34,7 @@ let renderJson = function (data) {
     }
     logosTitleSectiondata(logoTitleDataUpdated);
 
+    //Left Right Content Section (Whole)
     let leftRightSectionData = data.leftRightSection;
     const leftRightSectionDataUpdated = [];
     for (let i = 0; i < leftRightSectionData.length; i++) {
@@ -21,6 +44,7 @@ let renderJson = function (data) {
     }
     leftRightSection(leftRightSectionDataUpdated);
 
+    //Manage Work Section
     let manageWorkData = data.ManageWork;
     const manageWorkDataUpdated = [];
     for (let i = 0; i < manageWorkData.length; i++) {
@@ -30,6 +54,7 @@ let renderJson = function (data) {
     }
     ManageWork(manageWorkDataUpdated);
 
+    //Requirement Form Section
     let RequirementData = data.RequirementSection;
     const RequirementDataUpdated = [];
     for (let i = 0; i < RequirementData.length; i++) {
@@ -38,35 +63,71 @@ let renderJson = function (data) {
         }
     }
     Requirement(RequirementDataUpdated);
+
+    //Left Right Content Data (Left Side Image Right Side Content)
+    let workingData = data.leftRightSection[0].leftRightContainerFirst;
+    const workingDataUpdated = [];
+    for (let i = 0; i < workingData.length; i++) {
+        if (workingData[i].isShow === true) {
+            workingDataUpdated.push(workingData);
+        }
+    }
+    workingDataFirst(workingDataUpdated);
+
+    //Left Right Content Data (Right Side Image Left Side Content)
+    let workingDataSecond = data.leftRightSection[0].leftRightContainerSecond;
+    const workingDataSecondUpdated = [];
+    for (let i = 0; i < workingDataSecond.length; i++) {
+        if (workingDataSecond[i].isShow === true) {
+            workingDataSecondUpdated.push(workingDataSecond);
+        }
+
+    }
+    workingDataSecond1(workingDataSecondUpdated);
+
 }
 
-let headerTop = (data) =>{
+let workingDataSecond1 = (data) =>{
     $.each(data, function(key, value) {
-        let htmlRender =   "<div class='header-background' >" +
-            "<div class='header-container'>" +
-            "<div class='header-con'>"+
-            "<div class='header-logo'>"+
-            "<img src='"+value.companyLogo+"'>"+
+        let htmlRender =
+            "<div class='left-right-container-second'>"+
+            "<div class='left-image-container' data-aos='fade-left' data-aos-duration='300'>"+
+            "<img src='"+value[0].workingImg+"'>"+
             "</div>"+
+            "<div class='right-description' data-aos='fade-right' data-aos-duration='300'>" +
+            "<p>"+value[0].workingDesc+"</p>"+
+            " </div>"+
+            " </div>"
+        $(htmlRender).appendTo("#workingDataSecondSection");
+
+    });
+}
+
+let workingDataFirst = (data) =>{
+    $.each(data, function(key, value) {
+        let htmlRender =  "<div class='left-right-container'>"+
+            "<div class='left-image-container' data-aos='fade-right' data-aos-duration='300'>"+
+            "<img src='"+value[0].workingImg+"'>"+
+            "</div>"+
+            "<div class='right-description' data-aos='fade-left' data-aos-duration='300'>" +
+            "<p>"+value[0].workingDesc+"</p>"+
+            " </div>"+
+            " </div>"+
+           "<div id='workingDataSecondSection'></div>"
+        $(htmlRender).appendTo("#workingDataFirstSection");
+
+    });
+}
+
+let headerMobileMenuData = (data) =>{
+    $.each(data, function(key, value) {
+        let htmlRender = "<div>"+
             " <div class='checkbtn'>"+
             " <i id='icon' onclick='Myfunction()'  class='fa fa-bars'></i>"+
             " </div>"+
             " <div class='crossbtn'>"+
             " <i id='icon'  onclick='hidemenu()' class='fa fa-times'></i>"+
             " </div>"+
-            "<div class='header-links'>"+
-            "<ul>"+
-                "<li >"+"<a href=\"#\">"+value.link1+"</a>"+"</li>"+
-                "<li>"+"<a href=\"#\">"+value.link2+"</a>"+"</li>"+
-                "<li>"+"<a href=\"#\">"+value.link3+"</a>"+"</li>"+
-                "<li>"+"<a href=\"#\">"+value.link4+"</a>"+"</li>"+
-                "<li>"+"<a href=\"#\">"+value.link5+"</a>"+"</li>"+
-             "</ul>"+
-
-            "</div>"+
-
-            "</div>"+
-            "</div>"+
             "<div id='show-mobile-menu' class='header-links-mobile'>"+
             "<ul>"+
             "<li>"+"<a href=\"#\">"+value.link1+"</a>"+"</li>"+
@@ -77,6 +138,45 @@ let headerTop = (data) =>{
             "</ul>"+
 
             "</div>"+
+            "</div>"
+        $(htmlRender).appendTo("#headerMobileMenus");
+
+    });
+}
+
+let headerMenusData = (data) =>{
+    $.each(data, function(key, value) {
+        let htmlRender =  "<div class='header-links'>"+
+            "<ul>"+
+            "<li >"+"<a href=\"#\">"+value.link1+"</a>"+"</li>"+
+            "<li>"+"<a href=\"#\">"+value.link2+"</a>"+"</li>"+
+            "<li>"+"<a href=\"#\">"+value.link3+"</a>"+"</li>"+
+            "<li>"+"<a href=\"#\">"+value.link4+"</a>"+"</li>"+
+            "<li>"+"<a href=\"#\">"+value.link5+"</a>"+"</li>"+
+            "</ul>"+
+
+            "</div>"
+        $(htmlRender).appendTo("#headerMenus");
+
+    });
+}
+
+let headerTop = (data) =>{
+
+    $.each(data, function(key, value) {
+        let htmlRender =   "<div class='header-background' >" +
+            "<div class='header-container'>" +
+            "<div class='header-con'>"+
+            "<div class='header-logo'>"+
+            "<img src='"+value.companyLogo+"'>"+
+            "</div>"+
+
+            "<div id='headerMenus'></div>"+
+            "<div id='headerMobileMenus'></div>"+
+            "</div>"+
+
+            "</div>"+
+
             "<div class='banner-container' data-aos='fade-right' data-aos-duration='300'>"+
             "<h2>"+ value.bannerTitle +"</h2>"+
             "<p >"+ value.bannerDescription +"</p>"+
@@ -132,14 +232,7 @@ let leftRightSection = (data) =>{
                "<div class='heading-line'>"+
                "<img src='"+value.headingImg+"'>"+
                "</div>"+
-               "<div class='left-right-container'>"+
-               "<div class='left-image-container' data-aos='fade-right' data-aos-duration='300'>"+
-               "<img src='"+value.Leftimg+"'>"+
-               "</div>"+
-               "<div class='right-description' data-aos='fade-left' data-aos-duration='300'>" +
-                  "<p>"+value.RightDesc+"</p>"+
-              " </div>"+
-               " </div>"+
+              "<div id='workingDataFirstSection'></div>"+
           " </div>";
        $(htmlRender).appendTo("#leftrightSection");
        }) ;
