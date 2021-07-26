@@ -64,6 +64,8 @@ let renderJson = function (data) {
     }
     Requirement(RequirementDataUpdated);
 
+
+
     //Left Right Content Data (Left Side Image Right Side Content)
     let workingData = data.leftRightSection[0].leftRightContainerFirst;
     const workingDataUpdated = [];
@@ -87,14 +89,17 @@ let renderJson = function (data) {
 
 }
 
+
+
+
 let workingDataSecond1 = (data) =>{
     $.each(data, function(key, value) {
         let htmlRender =
             "<div class='left-right-container-second'>"+
-            "<div class='left-image-container' data-aos='fade-left' data-aos-duration='300'>"+
+            "<div class='left-image-container' style='width:"+value[0].imageWidth+"%' data-aos='fade-left' data-aos-duration='300'>"+
             "<img src='"+value[0].workingImg+"'>"+
             "</div>"+
-            "<div class='right-description' data-aos='fade-right' data-aos-duration='300'>" +
+            "<div class='right-description right-left-desc' style='width:"+value[0].descriptionWidth+"%' data-aos='fade-right' data-aos-duration='300'>" +
             "<p>"+value[0].workingDesc+"</p>"+
             " </div>"+
             " </div>"
@@ -106,18 +111,19 @@ let workingDataSecond1 = (data) =>{
 let workingDataFirst = (data) =>{
     $.each(data, function(key, value) {
         let htmlRender =  "<div class='left-right-container'>"+
-            "<div class='left-image-container' data-aos='fade-right' data-aos-duration='300'>"+
+            "<div class='left-image-container' style='width:"+value[0].imageWidth+"%' data-aos='fade-right' data-aos-duration='300'>"+
             "<img src='"+value[0].workingImg+"'>"+
             "</div>"+
-            "<div class='right-description' data-aos='fade-left' data-aos-duration='300'>" +
+            "<div class='right-description' style='width:"+value[0].descriptionWidth+"%' data-aos='fade-left' data-aos-duration='300'>" +
             "<p>"+value[0].workingDesc+"</p>"+
             " </div>"+
             " </div>"+
-           "<div id='workingDataSecondSection'></div>"
+            "<div id='workingDataSecondSection'></div>"
         $(htmlRender).appendTo("#workingDataFirstSection");
 
     });
 }
+
 
 let headerMobileMenuData = (data) =>{
     $.each(data, function(key, value) {
@@ -180,7 +186,7 @@ let headerTop = (data) =>{
             "<div class='banner-container' data-aos='fade-right' data-aos-duration='300'>"+
             "<h2>"+ value.bannerTitle +"</h2>"+
             "<p >"+ value.bannerDescription +"</p>"+
-            " <button type='button'>"+value.button1+"</button>"+
+            " <button class='banner-button' type='button'>"+value.button1+"</button>"+
             "</div>"+
             "</div>";
         $(htmlRender).appendTo("#header1");

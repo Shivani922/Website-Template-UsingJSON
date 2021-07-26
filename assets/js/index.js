@@ -34,7 +34,7 @@ $(document).ready(function(){
     var html = '';
     var owl = $('.owl-carousel').owlCarousel({
         loop:true,
-        smartSpeed: 100,
+        smartSpeed: 10,
         autoplay: true,
         autoplaySpeed: 100,
         mouseDrag: false,

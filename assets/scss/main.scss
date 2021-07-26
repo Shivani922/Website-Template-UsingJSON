@@ -42,8 +42,8 @@ h2{
 }
 .header-background{
   background:  linear-gradient(
-                  rgba(0, 0, 0, 0.6),
-                  rgba(0, 0, 0, 0.6)
+                  rgba(0, 0, 0, 0.7),
+                  rgba(0, 0, 0, 0.7)
   ),
   url('../images/BackgroundImage.jpg');
   background-position: center;
@@ -84,9 +84,14 @@ h2{
 
 .active{
   background-color: $font-white-color!important;
+
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28) !important;
+  a{
+    color: $font-black-color!important;
+  }
 }
 .header-container{
-  background: rgba(255, 255, 255, 0.5);
+  //background: rgba(255, 255, 255, 0.5);
   display: flex;
   position: fixed;
   width: 100%;
@@ -109,7 +114,7 @@ h2{
 
     .header-links{
       margin: 30px 0px 30px 227px;
-      color: $font-black-color;
+      color: $font-white-color;
       display: block;
       @media (max-width: 768px) {
         display: none;
@@ -125,7 +130,7 @@ h2{
           padding: 0px 20px 0 30px;
           a{
             text-decoration: none;
-            color: $font-black-color;
+            color: $font-white-color;
             display: block;
             padding: 8px;
             &:hover{
@@ -156,7 +161,7 @@ h2{
       padding: 60px 20px 0 30px;
       a{
         text-decoration: none;
-        color: $font-black-color;
+        color:$font-black-color;
         display: block;
         padding: 8px;
         &:hover{
@@ -171,20 +176,42 @@ h2{
 .banner-container{
   color: white;
   position: relative;
-  top:50%;
-  text-align: center;
+  top: 35%;
+  text-align: left;
+  width: 49%;
+  padding: 0px 100px 0 ;
+  @media (max-width: 767px) {
+    text-align: center;
+    width: 100%;
+    padding: 0px 10px 0 ;
+  }
   h2{
     font-size: $font-size-70;
+    @media (max-width: 767px) {
+      font-size: $font-size-50;
+    }
   }
   p{
-    font-size: $font-size-30;
-    font-weight: 300;
+    font-size: $font-size-16;
+    font-weight: 400;
+    line-height: 1.9;
+  }
+  .banner-button{
+    font-size: 12px;
+    padding: 14px 40px;
+    border: 2px solid red;
+    background: transparent;
+    margin-top: 20px;
+    font-weight: 500;
+    &:hover{
+      background: red;
+    }
   }
 
 }
 
 .logo-title-section{
-  background: $background-color-light;
+  background: #fff;
   height: fit-content;
   .logo-title-heading{
     padding: 56px 30px;
@@ -225,12 +252,17 @@ h2{
 }
 
 .left-right-main-container{
-  margin-bottom: 100px;
+  padding: 50px 0;
   height: fit-content;
+  background:$background-color-light;
   h4{
     text-align: center;
-    font-size: 40px;
-    margin: 50px 0 10px;
+    font-size: $font-size-50;
+    margin: 0 0 10px;
+    @media (max-width: 767px) {
+      padding: 10px 16px;
+      font-size: $font-size-28;
+    }
   }
   p{
     text-align: center;
@@ -254,7 +286,7 @@ h2{
 
 .left-right-container{
   display: flex;
-  padding: 20px 120px 0;
+  padding: 0px 120px 0;
   @media (max-width: 767px) {
     flex-direction: column;
     padding: 0px 15px;
@@ -267,7 +299,7 @@ h2{
   .left-right-container-second{
     display: flex;
     flex-direction: row-reverse;
-    padding: 20px 120px 0;
+    padding: 0px 120px;
     @media (max-width: 767px) {
       flex-direction: column;
       padding: 0px 15px;
@@ -282,34 +314,36 @@ h2{
 }
 
 .left-image-container{
-  width: 30%;
   margin-right: 80px;
   height: 400px;
   @media (max-width: 767px) {
-    width: 100%;
+    width: 100% !important;
   }
   img{
-    border-radius: 10px;
     width: 100%;
     height: 100%;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.6) !important;
   }
 }
+
 .right-description{
-  margin-top: 50px;
-  width: 70%;
-  font-size: $font-size-18;
-  letter-spacing: 2px;
+  margin-top: 35px;
+  font-size: $font-size-16;
+  letter-spacing: 1px;
   line-height: 25px;
+  width: 50%;
   @media (max-width: 767px) {
-    width: 100%;
+    width: 100% !important;
     margin-top: 50px!important;
   }
   @media (max-width: 1025px) {
     margin-top: 0px;
   }
+
   p{
     text-align: left;
     margin: 0px;
+    padding-bottom: 20px;
   }
 }
 
@@ -541,9 +575,9 @@ h2{
   }
 
   h2{
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
     @media (max-width: 767px) {
       margin-bottom: 30px;
       font-size: 40px;
@@ -555,9 +589,9 @@ h2{
   background-color:$background-red-color ;
   color: $font-white-color;
   padding: 40px 78px;
-  
+
   @media (max-width: 1024px) {
-    padding: 40px 8px;
+    padding: 41px 13px;
   }
   @media (max-width: 500px) {
     padding: 40px 78px!important;
@@ -565,9 +599,8 @@ h2{
 
 }
 
-
 .user-image {
-  width: 200px!important;
+  width: 190px!important;
   border-radius: 5px;
   float: left;
   margin-top: 10px;
@@ -587,13 +620,13 @@ h2{
   margin-top: 40px;
 }
 .owl-theme .owl-dots .owl-dot{
-  height: 15px!important;
-  width: 15px!important;
+  height: 8px!important;
+  width: 8px!important;
   margin: 0 5px!important;
   outline: none!important;
   border-radius: 14px!important;
   border: 2px solid $font-white-color !important;
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.2) !important;
+  //box-shadow: 0px 4px 15px rgba(0,0,0,0.2) !important;
   transition: all 0.3s ease!important;
 }
 .owl-theme .owl-dots .owl-dot.active,
@@ -603,6 +636,10 @@ h2{
 
 .owl-theme .owl-dots .owl-dot span{
   background: transparent!important;
+}
+
+#logoTitle{
+  display: flex;
 }
 
 

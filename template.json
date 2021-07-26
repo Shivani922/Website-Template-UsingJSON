@@ -12,10 +12,10 @@
       }
     ],
 
-    "companyLogo" : "assets/images/pepcus-logo.png",
-    "bannerTitle": "WE",
-    "bannerDescription": "Ready to build your product",
-    "button1": "Know More"
+    "companyLogo" : "assets/images/baner-logo.png",
+    "bannerTitle": "Technology Consulting Agency",
+    "bannerDescription": "We are digital technology consulting agency that helps companies increase better incomes and help with application for faster business growing.",
+    "button1": "Learn More"
   }
   ],
 
@@ -47,14 +47,25 @@
        "leftRightContainerFirst": [
          {
          "workingImg": "assets/images/Office-Image.jpg",
-         "workingDesc": "To grow our business, we will increase productivity of existing businesses as well as expand into new areas. We will also work to ensure the increasingly diverse and sophisticated needs of our clients are met, by expanding the scope of our business from public-side services, such as public equity and public and corporate bonds, to private-side products and services, such as private equity and privately placed bonds.\n\nAs we actively pursue new areas of business, we remain committed to our enduring mission to enrich society through our expertise in the capital markets. We will strengthen our ESG initiatives while placing continued emphasis on earning society's trust and ensuring our people are happy and fulfilled.",
-           "isShow": true
-       }
+         "workingDesc" : [
+             "To grow our business, we will increase productivity of existing businesses as well as expand into new areas||.",
+             " We will also work to ensure the increasingly diverse and sophisticated needs of our clients are met, by expanding the scope of our business from public-side services, such as public equity and public and corporate bonds, to private-side products and services, such as private equity and privately placed bonds.\n\nAs we actively pursue new areas of business, we remain committed to our enduring mission to enrich society through our expertise in the capital markets. We will strengthen our ESG initiatives while placing continued emphasis on earning society's trust and ensuring our people are happy and fulfilled."
+
          ],
+           "imageWidth": 50,
+           "descriptionWidth": 50,
+           "isShow": true
+
+       }
+
+
+           ],
       "leftRightContainerSecond": [
          {
            "workingImg": "assets/images/Office-lifestyle-image.jpg",
            "workingDesc": "To grow our business, we will increase productivity of existing businesses as well as expand into new areas. We will also work to ensure the increasingly diverse and sophisticated needs of our clients are met, by expanding the scope of our business from public-side services, such as public equity and public and corporate bonds, to private-side products and services, such as private equity and privately placed bonds.\n\nAs we actively pursue new areas of business, we remain committed to our enduring mission to enrich society through our expertise in the capital markets. We will strengthen our ESG initiatives while placing continued emphasis on earning society's trust and ensuring our people are happy and fulfilled.",
+           "imageWidth": 52,
+           "descriptionWidth": 50,
            "isShow": true
          }
         ],
@@ -88,7 +99,7 @@
 
   "AboveFooter": [
     {
-    "logoFooter":  "assets/images/pepcus-logo.png",
+    "logoFooter":  "assets/images/baner-logo.png",
     "FooterAddress": "",
      "FooterEmail": "",
      "FooterHeading": "Main Links",
@@ -109,57 +120,45 @@
   "results": [
     {
       "picture": {
-        "large":"https://randomuser.me/api/portraits/men/86.jpg",
-        "medium":"https://randomuser.me/api/portraits/med/men/86.jpg",
-        "thumbnail":"https://randomuser.me/api/portraits/thumb/men/86.jpg"}
+        "large":"assets/images/thinkHR-white.png",
+        "medium":"assets/images/thinkHR-white.png",
+        "thumbnail":"assets/images/thinkHR-white.png"}
     },
     {
       "picture": {
-        "large":"https://randomuser.me/api/portraits/men/87.jpg",
-        "medium":"https://randomuser.me/api/portraits/med/men/87.jpg",
-        "thumbnail":"https://randomuser.me/api/portraits/thumb/men/87.jpg"}
+        "large":"assets/images/mammothHR-white.png",
+        "medium":"assets/images/mammothHR-white.png",
+        "thumbnail":"assets/images/mammothHR-white.png"}
     },
     {
       "picture": {
-        "large":"https://randomuser.me/api/portraits/men/88.jpg",
-        "medium":"https://randomuser.me/api/portraits/med/men/88.jpg",
-        "thumbnail":"https://randomuser.me/api/portraits/thumb/men/88.jpg"}
+        "large":"assets/images/mincron-white.png",
+        "medium":"assets/images/mincron-white.png",
+        "thumbnail":"assets/images/mincron-white.png"}
     },
     {
       "picture": {
-        "large":"https://randomuser.me/api/portraits/men/90.jpg",
-        "medium":"https://randomuser.me/api/portraits/med/men/90.jpg",
-        "thumbnail":"https://randomuser.me/api/portraits/thumb/men/90.jpg"}
+        "large":"assets/images/newvision-white.png",
+        "medium":"assets/images/newvision-white.png",
+        "thumbnail":"assets/images/newvision-white.png"}
     },
     {
       "picture": {
-        "large":"https://randomuser.me/api/portraits/men/91.jpg",
-        "medium":"https://randomuser.me/api/portraits/med/men/91.jpg",
-        "thumbnail":"https://randomuser.me/api/portraits/thumb/men/91.jpg"}
+        "large":"assets/images/omnisTool-white.png",
+        "medium":"assets/images/omnisTool-white.png",
+        "thumbnail":"assets/images/omnisTool-white.png"}
     },
     {
       "picture": {
-        "large":"https://randomuser.me/api/portraits/men/92.jpg",
-        "medium":"https://randomuser.me/api/portraits/med/men/92.jpg",
-        "thumbnail":"https://randomuser.me/api/portraits/thumb/men/92.jpg"}
+        "large":"assets/images/refinitiv-white.png",
+        "medium":"assets/images/refinitiv-white.png",
+        "thumbnail":"assets/images/refinitiv-white.png"}
     },
     {
       "picture": {
-        "large":"https://randomuser.me/api/portraits/men/93.jpg",
-        "medium":"https://randomuser.me/api/portraits/med/men/93.jpg",
-        "thumbnail":"https://randomuser.me/api/portraits/thumb/men/93.jpg"}
-    },
-    {
-      "picture": {
-        "large":"https://randomuser.me/api/portraits/men/94.jpg",
-        "medium":"https://randomuser.me/api/portraits/med/men/94.jpg",
-        "thumbnail":"https://randomuser.me/api/portraits/thumb/men/94.jpg"}
-    },
-    {
-      "picture": {
-        "large":"https://randomuser.me/api/portraits/men/95.jpg",
-        "medium":"https://randomuser.me/api/portraits/med/men/95.jpg",
-        "thumbnail":"https://randomuser.me/api/portraits/thumb/men/95.jpg"}
+        "large":"assets/images/ssn-white.png",
+        "medium":"assets/images/ssn-white.png",
+        "thumbnail":"assets/images/ssn-white.png"}
     }
   ]
 
