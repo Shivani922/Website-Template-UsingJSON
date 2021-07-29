@@ -85,7 +85,8 @@
       "p3": "We deliver projects on time",
       "p4": "We work in minimal cost",
       "p5": "Time is very important for us",
-      "manageWorkData": true
+      "manageWorkData": true,
+      "background": "#f2f2f2"
     }
   ],
 

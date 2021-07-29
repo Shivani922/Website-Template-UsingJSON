@@ -83,3 +83,12 @@ function hidemenu(){
     $(".crossbtn").removeClass("show");
     $(".checkbtn").show();
 }
+
+// ------------------------------------ animation on scroll end-------------------------------------------
+
+
+$(function () {
+    setTimeout(function() {
+        $('.loader-wrapper').addClass('hide');
+    },1000);
+});

@@ -183,7 +183,7 @@ let headerTop = (data) =>{
 
             "</div>"+
 
-            "<div class='banner-container' data-aos='fade-right' data-aos-duration='300'>"+
+            "<div class='banner-container' >"+
             "<h2>"+ value.bannerTitle +"</h2>"+
             "<p >"+ value.bannerDescription +"</p>"+
             " <button class='banner-button' type='button'>"+value.button1+"</button>"+
@@ -245,19 +245,28 @@ let leftRightSection = (data) =>{
 }
 
 let ManageWork = (data) =>{
-    $.each(data, function (key,value){
-        let htmlRender = "<div class='manage-work-section'>"+
+    $.each(data, function (key,value){  style='width:"+value[0].imageWidth+"%'
+        let htmlRender = "<div class='manage-work-section' style='background: "+value.background+"'>"+
             "<div class='manage-work-right-section' data-aos='fade-right' data-aos-duration='300'>"+
                 "<h2>"+ value.WorkHeading +"</h2>"+
             "</div>"+
             "<div class='manage-work-left-section'>"+
                " <div class='manage-work-container' data-aos='fade-left' data-aos-duration='300'>"+
                    "<p>"+value.p1 +"</p>"+
+            "</div>"+
+            " <div class='manage-work-container' data-aos='fade-left' data-aos-duration='300'>"+
                    "<p>"+value.p2 +"</p>"+
+            "</div>"+
+            " <div class='manage-work-container' data-aos='fade-left' data-aos-duration='300'>"+
                    "<p>"+value.p3 +"</p>"+
+            "</div>"+
+            " <div class='manage-work-container' data-aos='fade-left' data-aos-duration='300'>"+
                    "<p>"+value.p4 +"</p>"+
+            "</div>"+
+            " <div class='manage-work-container' data-aos='fade-left' data-aos-duration='300'>"+
                    "<p>"+value.p5 +"</p>"+
-                "</div>"+
+            "</div>"+
+
            " </div>"+
        " </div>";
 
