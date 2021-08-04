@@ -21,9 +21,9 @@ $(window).scroll(function() {
     window.isMobile = /iphone|ipod|ipad|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase());
     if(!window.isMobile ) {
         if ($(this).scrollTop() > 90) {
-            $('.header-container').addClass("active")
+            $('.header-main-container').addClass("activeWhite")
         } else {
-            $('.header-container').removeClass("active")
+            $('.header-main-container').removeClass("activeWhite")
         }
     }
 });
@@ -72,19 +72,20 @@ $(document).ready(function(){
 
 
 //--------------Show Mobile Menu----------------
-function Myfunction(){
+function hideBarIcon(){
     $("#show-mobile-menu").show();
-    $(".crossbtn").addClass("show");
-    $(".checkbtn").hide();
+    $(".mobile-cross-icon").addClass("show");
+    $(".mobile-bar-icon").hide();
 
 }
 function hidemenu(){
     $("#show-mobile-menu").hide();
-    $(".crossbtn").removeClass("show");
-    $(".checkbtn").show();
+    $(".mobile-cross-icon").removeClass("show");
+    $(".mobile-bar-icon").show();
+
 }
 
-// ------------------------------------ animation on scroll end-------------------------------------------
+// ------------------------------------ animation for loader-------------------------------------------
 
 
 $(function () {
@@ -92,3 +93,5 @@ $(function () {
         $('.loader-wrapper').addClass('hide');
     },1000);
 });
+
+

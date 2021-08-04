@@ -4,25 +4,25 @@
     "Menus": [
       {
         "link1": "Home",
-        "link2": "About Us",
-        "link3": "Careers",
-        "link4": "Team",
+        "link2": "Solutions",
+        "link3": "About Us",
+        "link4": "Services",
         "link5": "Contact Us",
-        "isMenuShow": false
+        "isMenuShow": true
       }
     ],
 
     "companyLogo" : "assets/images/baner-logo.png",
-    "bannerTitle": "Technology Consulting Agency",
-    "bannerDescription": "We are digital technology consulting agency that helps companies increase better incomes and help with application for faster business growing.",
-    "button1": "Learn More"
+    "bannerTitle": "Leading IT & Software Development Company",
+    "bannerDescription": "IT SOFTWARE COMPANY ",
+    "button1": "GET IN TOUCH"
   }
   ],
 
   "logoTitleSection": [
     {
       "mainHeading": "Benefits of developing your products with us.",
-      "mainDesc": "",
+      "mainDesc": "SOLUTIONS",
       "icon1":"assets/images/ZeroLiability.png",
       "heading1": "Zero Liabilities",
       "description1": "A team with zero liabilities",
@@ -41,14 +41,15 @@
 
   "leftRightSection": [
     {
-      "HeadingSection": "Reason to love working",
-      "DescriptionSection": "",
-      "headingImg": "assets/images/HeadingBelow.png",
+      "HeadingSection": "",
+      "DescriptionSection": "ABOUT US",
+      "background": "#FEF5F5",
        "leftRightContainerFirst": [
          {
-         "workingImg": "assets/images/Office-Image.jpg",
+         "workingImg": "assets/images/Office-lifestyle-image.jpg",
+           "workingHeading": "Reason to love working with us",
          "workingDesc" : [
-             "To grow our business, we will increase productivity of existing businesses as well as expand into new areas||.",
+             "To grow our business, we will increase productivity of existing businesses as well as expand into new areas",
              " We will also work to ensure the increasingly diverse and sophisticated needs of our clients are met, by expanding the scope of our business from public-side services, such as public equity and public and corporate bonds, to private-side products and services, such as private equity and privately placed bonds.\n\nAs we actively pursue new areas of business, we remain committed to our enduring mission to enrich society through our expertise in the capital markets. We will strengthen our ESG initiatives while placing continued emphasis on earning society's trust and ensuring our people are happy and fulfilled."
 
          ],
@@ -62,11 +63,12 @@
            ],
       "leftRightContainerSecond": [
          {
-           "workingImg": "assets/images/Office-lifestyle-image.jpg",
+           "workingImg": "assets/images/Office-Image.jpg",
+           "workingHeading": "Reason to love working with us",
            "workingDesc": "To grow our business, we will increase productivity of existing businesses as well as expand into new areas. We will also work to ensure the increasingly diverse and sophisticated needs of our clients are met, by expanding the scope of our business from public-side services, such as public equity and public and corporate bonds, to private-side products and services, such as private equity and privately placed bonds.\n\nAs we actively pursue new areas of business, we remain committed to our enduring mission to enrich society through our expertise in the capital markets. We will strengthen our ESG initiatives while placing continued emphasis on earning society's trust and ensuring our people are happy and fulfilled.",
            "imageWidth": 52,
            "descriptionWidth": 50,
-           "isShow": true
+           "isShow": false
          }
         ],
 
@@ -79,6 +81,7 @@
 
   "ManageWork": [
     {
+      "workDesc": "SERVICES",
       "WorkHeading": "Why to manage your work with us.",
       "p1": "We have super talented Engineers With us",
       "p2": "We can guide you",
@@ -86,7 +89,7 @@
       "p4": "We work in minimal cost",
       "p5": "Time is very important for us",
       "manageWorkData": true,
-      "background": "#f2f2f2"
+      "background": "#FEF5F5"
     }
   ],
 
